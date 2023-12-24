@@ -1,0 +1,29 @@
+:root {
+    --danger: #c71c22;
+    --info: #2fa4e7;
+    --warn: #eab518;
+    --success: #73a839;
+
+    --color1-bg: #fcbc0e;
+    --color1-txt: #3b3b3b;
+    --color1-txt2: #ffffff;
+
+    --color2-bg: #642b8f;
+    --color2-txt: #ffffff;
+
+    --color3-bg: #ffffff;
+    --color3-txt: #000000;
+    --color3-txt2: #5e5e5e;
+
+    --color4-bg: #242424;
+    --color4-bg2: #3d3d3d;
+    --color4-txt: #fcfcfc;
+    --color4-txt2: #fcbc0e;
+
+    --color5-bg: #a6a6a6;
+    --color5-txt: #62288e;
+    --color5-txt2: #232323;
+}
+
+body.dark {
+}

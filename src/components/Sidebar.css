@@ -1,0 +1,115 @@
+.sidebar {
+    padding: 10px;
+    background: var(--color4-bg);
+}
+
+.sidebar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.sidebar .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebar .img.logo img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.sidebar .img.photo {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.sidebar .img.photo img {
+    max-width: 100px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    background: var(--color1-bg);
+    border: solid 3px var(--color1-txt2);
+    border-radius: 50%;
+}
+
+.sidebar .img.photo label {
+    font-size: 1.4em;
+    color: var(--color4-txt);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.sidebar .options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.sidebar .options.options-nav {
+    margin: auto 0;
+}
+
+.sidebar .options a.option,
+.sidebar .options a.option * {
+    cursor: pointer;
+}
+
+.sidebar .options a.option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.sidebar .options a.option:hover,
+.sidebar .options a.option.active {
+    background: var(--color4-bg2);
+}
+
+.sidebar .options a.option svg {
+    color: var(--color4-txt2);
+}
+
+.sidebar .options a.option label {
+    color: var(--color4-txt);
+}
+
+.sidebar .options.options-btn {
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
+.sidebar .options.options-btn .option {
+    background: var(--color5-bg);
+    color: var(--color5-txt);
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.sidebar .options.options-btn label.mark {
+    color: var(--color4-txt);
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: -10px;
+}
+
+.sidebar .options.options-btn button.option {
+    cursor: pointer;
+}
+
+.sidebar .options.options-btn label.option {
+    color: var(--color5-txt2);
+}

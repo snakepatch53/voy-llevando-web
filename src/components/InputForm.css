@@ -1,0 +1,91 @@
+.input-form-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-form-component:first-child {
+    margin-top: 0;
+}
+
+.input-form-component label {
+    font-family: contenido;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+.input-form-component textarea,
+.input-form-component select,
+.input-form-component input {
+    border: solid 2px #131313;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    background: var(--color3-bg);
+    color: var(--color3-txt);
+}
+
+.input-form-component textarea.error,
+.input-form-component select.error,
+.input-form-component input.error {
+    border: solid 2px var(--danger);
+}
+
+.input-form-component .error-label {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.input-form-component textarea.error ~ .error-label,
+.input-form-component select.error ~ .error-label,
+.input-form-component input.error ~ .error-label {
+    max-height: 30px;
+    font-size: 0.9rem;
+    color: var(--danger);
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.input-form-component textarea {
+    min-height: 86px;
+    resize: vertical;
+}
+
+.input-form-component textarea::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+}
+
+.input-form-component textarea::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+.input-form-component textarea::-webkit-scrollbar-track {
+    max-height: 50%;
+    margin: 22px 0;
+    background: transparent;
+}
+
+.input-form-component input[type="file"] {
+    position: relative;
+    cursor: pointer;
+}
+
+.input-form-component input[type="file"]:before {
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(placeholder);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    background: var(--color3-bg);
+    color: var(--color3-txt2);
+}

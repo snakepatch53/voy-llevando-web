@@ -1,0 +1,48 @@
+.button-form-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: contenido;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-form-component:hover {
+    transform: scale(1.03);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+/* .button-form-component span {}
+
+.button-form-component svg {} */
+
+.button-form-component.type-1 {
+    background: var(--color1-bg);
+    color: var(--color1-txt);
+}
+
+.button-form-component.type-2 {
+    background: var(--color2-bg);
+    color: var(--color2-txt);
+}
+
+.button-form-component.type-3 {
+    background: var(--color3-bg);
+    color: var(--color3-txt);
+}
+
+.button-form-component.type-4 {
+    background: var(--color4-bg);
+    color: var(--color4-txt);
+}
+
+.button-form-component.type-5 {
+    background: var(--color5-bg);
+    color: var(--color5-txt);
+}

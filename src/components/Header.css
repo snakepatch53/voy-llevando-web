@@ -1,0 +1,42 @@
+header.floats-btns {
+    position: fixed;
+    z-index: 1000;
+    right: 40px;
+    top: 40px;
+}
+
+header.floats-btns button {
+    position: fixed;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background: var(--color4-bg);
+    border-radius: 50%;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+header.floats-btns button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+}
+
+header.floats-btns button svg {
+    color: var(--color4-txt2);
+    font-size: 1.5em;
+}
+
+header.floats-btns .btn-notifications {
+    top: 100px;
+}
+
+header.floats-btns .btn-chat {
+    /*    top: calc(100vh - 50px);*/
+    bottom: 40px;
+}
