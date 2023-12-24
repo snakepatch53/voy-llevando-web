@@ -22,15 +22,15 @@ export default function Users() {
                         <tr>
                             <th className="size-show-1">NOMBRE</th>
                             <th>CEDULA</th>
-                            <th>CÓDIGO TRACKING</th>
+                            <th>TIPO</th>
                             <th className="size-show-1">ACCIONES</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td className="size-show-1">65456</td>
-                            <td>Pack de pacman xdd</td>
-                            <td>En tránsito a aeropuerto USA</td>
+                            <td className="size-show-1">Fausto Perez</td>
+                            <td>1400703770</td>
+                            <td>Super Administrador</td>
                             <td className="size-show-1">
                                 <div className="btn-group">
                                     <button className="btn btn-primary">
@@ -41,9 +41,22 @@ export default function Users() {
                             </td>
                         </tr>
                         <tr>
-                            <td className="size-show-1">65456</td>
-                            <td>Mi caja de cajas 😅</td>
-                            <td>Llegando a Ecuador</td>
+                            <td className="size-show-1">Carlos Fabian</td>
+                            <td>0704870488</td>
+                            <td>Administrador</td>
+                            <td className="size-show-1">
+                                <div className="btn-group">
+                                    <button className="btn btn-primary">
+                                        <div className="tooltip">Editar</div>
+                                        <i className="fas fa-edit"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="size-show-1">Pedro Fernandez</td>
+                            <td>5004870488</td>
+                            <td>Carrier</td>
                             <td className="size-show-1">
                                 <div className="btn-group">
                                     <button className="btn btn-primary">

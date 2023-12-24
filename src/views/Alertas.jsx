@@ -3,7 +3,10 @@ import AlertasForm from "../components/AlertasForm";
 import AnimateElement from "../components/AnimateElement";
 import "./Alertas.css";
 import ButtonForm from "../components/ButtonForm";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faEdit, faPlus } from "@fortawesome/free-solid-svg-icons";
+
+import alert_list from "./../mooks/alertas.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 Alertas.propTypes = null;
 export default function Alertas() {
@@ -30,7 +33,23 @@ export default function Alertas() {
                             <th className="size-show-1">ACCIONES</th>
                         </tr>
                     </thead>
-                    <tbody id="element-table"></tbody>
+                    <tbody id="element-table">
+                        {alert_list.map((alert) => (
+                            <tr key={alert.alert_id}>
+                                <td className="size-show-1">{alert.alert_guide}</td>
+                                <td>{alert.alert_buyer_name}</td>
+                                <td>{alert.alert_tracking_code}</td>
+                                <td className="size-show-1">
+                                    <div className="btn-group">
+                                        <button className="btn btn-primary">
+                                            <div className="tooltip">Editar</div>
+                                            <FontAwesomeIcon icon={faEdit} />
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
                 </table>
             </section>
 

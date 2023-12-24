@@ -84,7 +84,7 @@ export default function Paquetes() {
                     <tbody>
                         <tr>
                             <td className="size-show-1">65456</td>
-                            <td>Pack de pacman xdd</td>
+                            <td>Producto 1</td>
                             <td>En tránsito a aeropuerto USA</td>
                             <td className="size-show-1">
                                 <div className="btn-group">
@@ -97,7 +97,7 @@ export default function Paquetes() {
                         </tr>
                         <tr>
                             <td className="size-show-1">65456</td>
-                            <td>Mi caja de cajas 😅</td>
+                            <td>Producto 2</td>
                             <td>Llegando a Ecuador</td>
                             <td className="size-show-1">
                                 <div className="btn-group">

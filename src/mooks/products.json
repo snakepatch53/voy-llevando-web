@@ -30,53 +30,5 @@
         "product_weight": 13,
         "product_quantity": 10,
         "product_description": "Product 4 description"
-    },
-    {
-        "product_id": 5,
-        "product_name": "Product 5",
-        "product_price": 500,
-        "product_weight": 13,
-        "product_quantity": 10,
-        "product_description": "Product 5 description"
-    },
-    {
-        "product_id": 6,
-        "product_name": "Product 6",
-        "product_price": 600,
-        "product_weight": 13,
-        "product_quantity": 10,
-        "product_description": "Product 6 description"
-    },
-    {
-        "product_id": 7,
-        "product_name": "Product 7",
-        "product_price": 700,
-        "product_weight": 13,
-        "product_quantity": 10,
-        "product_description": "Product 7 description"
-    },
-    {
-        "product_id": 8,
-        "product_name": "Product 8",
-        "product_price": 800,
-        "product_weight": 13,
-        "product_quantity": 10,
-        "product_description": "Product 8 description"
-    },
-    {
-        "product_id": 9,
-        "product_name": "Product 9",
-        "product_price": 900,
-        "product_weight": 13,
-        "product_quantity": 10,
-        "product_description": "Product 9 description"
-    },
-    {
-        "product_id": 10,
-        "product_name": "Product 10",
-        "product_price": 1000,
-        "product_weight": 13,
-        "product_quantity": 10,
-        "product_description": "Product 10 description"
     }
 ]
