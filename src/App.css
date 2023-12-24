@@ -223,8 +223,9 @@
     display: flex;
     height: auto;
     max-height: 100%;
-    padding: 30px;
-    background: var(--color3-bg);
+    padding: 20px;
+    /* background: var(--color3-bg); */
+    background: #e1e2eb;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
     border-radius: var(--radius);
 }
@@ -259,7 +260,11 @@
 .el-forms-styles .window form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 400px;
+    background: var(--color3-bg);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
 }
 
 .el-forms-styles .window form .inputs {

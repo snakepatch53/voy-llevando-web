@@ -13,7 +13,7 @@
 .input-form-component label {
     font-family: contenido;
     font-size: 1.2rem;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .input-form-component textarea,
@@ -23,7 +23,7 @@
     border-radius: 30px;
     font-size: 1.1rem;
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 5px 15px;
     width: 100%;
     background: var(--color3-bg);
     color: var(--color3-txt);

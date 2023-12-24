@@ -1,11 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./AlertasForm.css";
 import AnimateElement from "./AnimateElement";
-import { faSave, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faSave, faTimes, faTrash } from "@fortawesome/free-solid-svg-icons";
 import InputForm from "./InputForm";
 import ButtonForm from "./ButtonForm";
 import { useEffect, useRef } from "react";
 import { validateForm } from "../functions/validateForm";
+
+import product_list from "./../mooks/products.json";
 
 export default function AlertasForm({ onClose }) {
     const $form = useRef(null);
@@ -104,6 +106,69 @@ export default function AlertasForm({ onClose }) {
                         <ButtonForm label="REGISTRAR" icon={faSave} />
                     </div>
                 </form>
+                <div className="products-container scroll-style">
+                    <form>
+                        <h3 className="col-2">Agrega tus productos aqui ⬇️</h3>
+                        <InputForm label="Nombre" name="product_name" placeholder="Producto" />
+                        <InputForm
+                            label="Precio"
+                            name="product_price"
+                            placeholder="Precio"
+                            type="number"
+                        />
+                        <InputForm
+                            className="col-2"
+                            label="Descripcion"
+                            name="product_description"
+                            placeholder="Descripcion"
+                            type="textarea"
+                        />
+                        <InputForm
+                            label="Peso"
+                            name="product_weight"
+                            placeholder="Peso"
+                            type="number"
+                        />
+                        <InputForm
+                            label="Cantidad"
+                            name="product_quantity"
+                            placeholder="Cantidad"
+                            type="number"
+                        />
+                        <div className="col-2">
+                            <ButtonForm label="AGREGAR" icon={faPlus} />
+                        </div>
+                    </form>
+
+                    <div className="product-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Peso</th>
+                                    <th>Cantidad</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {product_list.map((product) => (
+                                    <tr key={product.product_id}>
+                                        <td>{product.product_name}</td>
+                                        <td>{product.product_price}</td>
+                                        <td>{product.product_weight} kg</td>
+                                        <td>{product.product_quantity}</td>
+                                        <td>
+                                            <button>
+                                                <FontAwesomeIcon icon={faTrash} />
+                                            </button>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </AnimateElement>
     );

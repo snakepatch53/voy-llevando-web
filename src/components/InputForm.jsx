@@ -7,12 +7,13 @@ export default function InputForm({
     placeholder,
     type = "text",
     errorLabel = "",
+    className = "",
 }) {
     return (
-        <div className={"input-form-component " + type}>
+        <div className={"input-form-component " + type + " " + className}>
             <label htmlFor={name}>{label}</label>
 
-            {(type === "text" || type === "password" || type === "file") && (
+            {(type === "text" || type === "password" || type === "file" || type === "number") && (
                 <Input type={type} name={name} id={name} placeholder={placeholder} />
             )}
 
